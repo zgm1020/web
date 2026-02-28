@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的博客</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>我的博客</h1>
+        <p>记录技术、生活与灵感</p>
+        <div class="toolbar">
+          <input id="searchInput" type="search" placeholder="搜索文章标题或标签..." />
+          <button id="themeButton" type="button" aria-label="切换主题">🌙 夜间模式</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2 class="section-title">最新文章</h2>
+        <div id="postList" class="post-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> 我的博客 · 用纯 HTML/CSS/JS 构建</p>
+      </div>
+    </footer>
+
+    <template id="postTemplate">
+      <article class="post-card">
+        <div class="post-meta">
+          <time class="post-date"></time>
+          <span class="post-read-time"></span>
+        </div>
+        <h3 class="post-title"></h3>
+        <p class="post-summary"></p>
+        <div class="post-tags"></div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
