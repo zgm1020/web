@@ -1,0 +1,9 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "纯静态博客，支持局域网/公网访问",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
